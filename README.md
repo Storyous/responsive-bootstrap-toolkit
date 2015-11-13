@@ -13,22 +13,7 @@ Current version: **2.5.1**
 * [Using with Foundation](#using-with-foundation)
 * [Providing your own visibility classes](#providing-your-own-visibility-classes)
 
-### HOW-TO
-* [How do I include it in my project?](#how-do-i-include-it-in-my-project)
-* [Migrating from an older version](#migrating-from-an-older-version)
-* [Dependencies](#dependencies)
 
-### Installation
-````
-bower install responsive-toolkit
-````
-
-### Demo
-
-Live example available on [CodePen](http://codepen.io/dih/full/ivECj). Hosted along with repository are the following usage examples:
-* [Bootstrap demo](https://github.com/maciej-gurban/responsive-bootstrap-toolkit/tree/master/demos/bootstrap)
-* [Foundation demo](https://github.com/maciej-gurban/responsive-bootstrap-toolkit/tree/master/demos/foundation)
-* [Custom breakpoints demo](https://github.com/maciej-gurban/responsive-bootstrap-toolkit/tree/master/demos/custom)
 
 
 #### Basic usage:
@@ -126,24 +111,3 @@ Currently, only Foundation 5 visibility classes are supported. If you'd like to 
 })(jQuery, ResponsiveBootstrapToolkit);
 ````
 
-**Note**:
-It's up to you to create media queries that will toggle div's visibility across different screen resolutions. How? [Refer to this example](https://github.com/maciej-gurban/responsive-bootstrap-toolkit/blob/master/demos/custom/style.css).
-
-#### How do I include it in my project?
-
-Paste just before `</body>`
-
-````html
-<!-- Responsive Bootstrap Toolkit -->
-<script src="js/bootstrap-toolkit.min.js"></script>
-<!-- Your scripts using Responsive Bootstrap Toolkit -->
-<script src="js/main.js"></script>
-````
-
-### Migrating from an older version
-
-Refer to the [changelog](https://github.com/maciej-gurban/responsive-bootstrap-toolkit/blob/master/CHANGELOG.md) for a list of changes in each version of the library.
-
-#### Dependencies:
-* jQuery
-* Bootstrap's responsive utility css classes (included in its standard stylesheet package)
