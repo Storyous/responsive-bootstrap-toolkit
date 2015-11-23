@@ -107,12 +107,18 @@ var ResponsiveBootstrapToolkit = {
         };
     },
 
+    _windowSize: function() {
+        return '<span style="text-transform: lowercase;margin-right:5px">' + $(window).width() + ' px </span>';
+    },
 
+    _toolkitDataHtml: function() {
+        return this._windowSize() + '( ' + this.current() + ' )' ;
+    },
 
     _addToolkitBar : function() {
 
         var self = this;
-        var $toolkitBar = $('<div class="responsive-bootstrap-toolkit-bar">'+ this.current() +' </div>');
+        var $toolkitBar = $('<div class="responsive-bootstrap-toolkit-bar">'+ this._toolkitDataHtml() + '</div>');
 
         var styles = {
             'position': 'absolute',
@@ -131,7 +137,7 @@ var ResponsiveBootstrapToolkit = {
         $toolkitBar.appendTo('body').css(styles);
 
         $(window).resize(function(){
-            $toolkitBar.text(self.current());
+            $toolkitBar.html( self._toolkitDataHtml() );
         });
     },
 
