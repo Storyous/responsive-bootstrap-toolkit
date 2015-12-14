@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-js-breakpoints",
+  "name": "responsive-bootstrap-toolkit",
   "description": "Responsive Bootstrap Toolkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {
 
   },
